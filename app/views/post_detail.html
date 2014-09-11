@@ -1,0 +1,8 @@
+﻿<section>
+  <div class="post" data-bind="with: post">
+    <h2 data-bind="text: title"></h2>
+    <blockquote data-bind="text: body" style="white-space: pre;"></blockquote>
+  </div>
+
+  <div data-bind="widget: { kind: 'actions', entry: post(), in_detail: true }"></div>
+</section>

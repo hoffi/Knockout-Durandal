@@ -1,0 +1,17 @@
+<div class="panel panel-default"
+     data-bind="attr: { 'data-id': entry.id }, css: { 'panel-primary': entry.marked }">
+
+    <div class="panel-heading">
+        <h3 class="panel-title pull-left">
+            <a href="#" data-bind="text: entry.title, click: show"></a>
+        </h3>
+        <small class="pull-right" data-bind="text: entry.posted_on"></small>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="panel-body">
+        <div class="pull-left" data-bind="text: entry.body"></div>
+        <div class="pull-right" data-bind="widget: { kind: 'actions', entry: entry }"></div>
+        <div class="clearfix"></div>
+    </div>
+</div>

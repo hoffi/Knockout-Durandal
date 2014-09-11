@@ -1,0 +1,11 @@
+﻿<section>
+    <br>
+    <button type="button" class="btn btn-success" data-bind="click: new_entry">
+        Neuer Blogeintrag
+    </button>
+    <br><br>
+
+    <div id='blog' data-bind="foreach: blog.entries">
+        <div data-bind="widget: { kind: 'post', entry: $data }"></div>
+    </div>
+</section>
